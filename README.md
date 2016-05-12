@@ -1,20 +1,67 @@
 # Conditionals
 
-## Objectives
+![Shakespeare](http://www.gomoxie.com/wp-content/uploads/Hamlet.jpg)
+>To be, or not to be...
 
-1. Objective 1
-2. Objective 2.
+## Learning Objectives - The student should be able to..
 
-## Instructions
+* Explain that by making parts of their code *conditional*, they can execute different pieces of code based on certain conditions.
+* Explain that an *if* statement will execute a set of statements **only** if that condition is *true*. 
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
+```swift
+var age = 19
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
+if age < 21 {
+    print("You're not allowed to drink!")
+}
 
-### Part 1: Do Some Stuff
+// prints "You're not allowed to drink!"
+```
 
-## Resources
+* Explain that an *if* statement can provide an alternative set of statements, known as an *else clause*, for situations when the *if* condition is *false*.
 
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+```swift
+var myHeight = 50
+
+if myHeight > 60 {
+    print("You're free to go on the ride, enjoy!")
+} else {
+    print("I'm sorry, you're too short to go on this ride today.")
+}
+
+// prints "I'm sorry, you're too short to go on this ride today."
+```
+
+* Create/chain multiple *if* statements together to consider additional clauses:
+
+```swift
+var temperatureInFahrenheit = 100
+
+if temperatureInFahrenheit < 32 {
+    print("Snow! 🌨")
+} else if temperatureInFahrenheit >= 90 {
+    print("Very hot! ☀️")
+} else {
+    print("Just right. 🌻")
+}
+```
+
+
+
+## What the student can do at this point 
+
+* Create variables and constants
+* Is familiar with type annotations, type inference and string interpolation.
+* Can create functions with return types.
+* Is familiar with the `String`, `Int`, `Double` and `Bool` type.
+* Just learned about `Bool` prior to this reading.
+* Just learned about *comparison operators* but has YET to see what an if statement looks like. 
+
+
+## Outline / Notes
+
+*  You can run with the the narrative/examples I provided above if you so desire.
+* I like the idea of having them open a playground file and get used to typing in the syntax.
+* Maybe challenge them to type code off of a sentence or two (put them in a position where they have to evaluate what you wrote and turn that into code).
 
 <a href='https://learn.co/lessons/Conditionals' data-visibility='hidden'>View this lesson on Learn.co</a>
