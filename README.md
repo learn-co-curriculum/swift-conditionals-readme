@@ -149,13 +149,13 @@ if test(x, y) {
 There is one final bit of magic with Conditionals, and that is that we can chain them together almost indefinitely.  This is something that's actually much clearer to understand in code than written out in English, so let's look at an example:
 
 ````Swift
-if sallyIsWearingYellow {
+if sallyDressColor == "yellow" {
 	wearSomethingGreen()
-} else if sallyIsWearingBlue {
+} else if sallyDressColor == "blue" {
 	wearSomethingPurple()
-} else if sallyIsWearingRed() {
+} else if sallyDressColor == "red" {
 	wearSomethingOrangle() 
-} else if sallyIsWearingGreen() {
+} else if sallyDressColor == "green" {
 	wearSomethingBlue()
 } else ...
 // that's a lot of decision-making!
