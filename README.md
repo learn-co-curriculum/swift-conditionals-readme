@@ -20,8 +20,8 @@ For example:
 ````Swift
 3 < 5    // false
 12 >= 12  // true
-let greedoFiredFirst  // true
-! greedoFiredFirst  // false
+let greedoFiredFirst = false  // kickin' it old-skool
+!greedoFiredFirst  // "true" (also known as revisionist history)
 ````
 
 At this point you may find Booleans interesting but are wondering what they're actually good for.  If that's the case then you're in luck because that's *exactly* what this lesson is about.
@@ -42,20 +42,43 @@ let i = 12 >= 9
 Most programs, however, need an additional component, and that component is Conditionals.  Conditionals are how you tell the program to take different behavior based upon conditions or results.  The simplest form of Conditional is just to do something if an expression is true.  We can express "if class is hard then study more" like this:
 
 ````Swift
+func studyMore() {
+    print("Study 📖")
+}
+
+var classIsHard = true
+
 if classIsHard {
 	studyMore()
 }
+// prints "Study 📖"
 ````
+
+Here we created a function named studyMore which takes no arguments and doesn't return anything. When this function is called, it will print 'Study 📖' to console. Following that, we're creating a variable named classIsHard of type Bool with a value of true. The next part should be self-evident in that it reads like a sentence. We're using an if statement. If classIsHard is true (which it is) then we should execute the code in the following { } curly braces. The code in the { } curly braces following that if statement is a call to the function studyMore(). As it stands, 'Study 📖' will print to console because classIsHard has a value of true. But what if we change classIsHard to false? If we did, then the studyMore() function will not be called and nothing will print to console. The compiler will continue on its merry way because the if statement would not have evaluated to true, thus it would not have entered those { } curly braces.
+Add a line note
 
 We can also specify an "else" clause.  For example, we can express "if class is hard then study more otherwise catch up on sleep" ike this:
 
 ````Swift
-if classIsHard() {
-	studyMore()
-} else {
-	catchUpOnSleep()
+func studyMore() {
+    print("Study 📖")
 }
+
+func catchUpOnSleep() {
+    print("Zzzz 💤 😴")
+}
+
+var classIsHard = false
+
+if classIsHard {
+    studyMore()
+} else {   
+    catchUpOnSleep()
+}
+
+// prints "Zzzz 💤 😴"
 ````
+Similar to above, but we added another function named catchUpOnSleep() which prints 'Zzzz 💤 😴' when called on. Then we are creating the classIsHard variable but setting it's initial value to false. Next we've created an if-else statement which should read like a sentence. If the class is hard, then we should study more.. if not, then we should catch up on some sleep. As you can see, what prints to console is 'Zzzz 💤 😴' which means studyMore() does not get called, we do not enter those { } curly braces, but we do enter the { } braces after the else statement because the first if statement evaluated to false. If it evaluated to true, then 'Study 📖' would have printed to the console and the catchUpOnSleep() function would never have gotten called.
 
 Are you begining to see the pattern?  Let's look at another one, maybe something more like an actual program, like "if the file exists then open it, otherwise tell the user it can't be found".  Let's see what it would look like in code:
 
@@ -82,18 +105,25 @@ openFileNamed("testfile")
 Can you see how they'e variations of the same thing?  Let's look at another example.
 
 ````Swift
+var rainingOutside = false
+
 if rainingOutside == true {
 	takeUmbrella()
 } else {
 	// don't worry about taking the umbrella
+	// NB no code is being excuted here, only comments!
 }
 goForAWalk()
 ````
 is the same as...
 
 ````Swift
-if rainingOutside == true {
-	takeUmbrella()
+func takeUmbrella() {
+    // grab umbrella
+    print("I have my umbrella! ☂️")
+}
+
+
 }
 goForAWalk()
 ````
