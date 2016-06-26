@@ -128,7 +128,7 @@ func takeUmbrella() {
 goForAWalk()
 ````
 
-Our ````if```` doesn't have to be followed by a Boolean expression; it can also take Boolean variable or constant, or a function which returns a Boolean.  Here's what that would look like in code:
+Our ````if```` doesn't have to be followed by a Boolean expression; it can also take a Boolean variable or constant, or a function which returns a Boolean.  Here's what that would look like in code:
 
 ````Swift
 let x = true
@@ -171,7 +171,7 @@ func test(Bool a, Bool b) -> Bool {
 ...
 }
 
-if test(x, y) {
+if test(x, b: y) {
 ...
 }
 ````
@@ -192,13 +192,13 @@ if sallyDressColor == "yellow" {
 ````
 
 ##Review
-*You've learned that Boolean expressions return ````true```` or ````false```` based upon the result of the comparison performed (or inverting the value in the case of the spcial operator ````!````).
+* You've learned that Boolean expressions return ````true```` or ````false```` based upon the result of the comparison performed (or inverting the value in the case of the spcial operator ````!````).
 
-*Boolean expressions are particularly useful in helping your program take a particular course of action.  For example, ````if the battery is low then alert user to conserve power````.  This is expressed with an ````if```` conditional.
+* Boolean expressions are particularly useful in helping your program take a particular course of action.  For example, ````if the battery is low then alert user to conserve power````.  This is expressed with an ````if```` conditional.
 
-*An alternate course of action can also be specified, such as ````if the battery is low then set battery color to red otherwise set battery color to blue````.   You accomplish this using an ````if / else```` Conditional, such as ````if batteryIsLow { ... } else { ... }````
+* An alternate course of action can also be specified, such as ````if the battery is low then set battery color to red otherwise set battery color to blue````.   You accomplish this using an ````if / else```` Conditional, such as ````if batteryIsLow { ... } else { ... }````
 
-*You can chain multiple ````if / else```` chunks together to handle more complicated situations where there instead of testing a single value you need to take different actions based upon three or more values.
+* You can chain multiple ````if / else```` chunks together to handle more complicated situations where there instead of testing a single value you need to take different actions based upon three or more values.
 
 
 <a href='https://learn.co/lessons/Conditionals' data-visibility='hidden'>View this lesson on Learn.co</a>
