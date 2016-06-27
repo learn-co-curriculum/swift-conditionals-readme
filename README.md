@@ -57,7 +57,7 @@ if classIsHard {
 Here we created a function named studyMore which takes no arguments and doesn't return anything. When this function is called, it will print 'Study 📖' to console. Following that, we're creating a variable named classIsHard of type Bool with a value of true. The next part should be self-evident in that it reads like a sentence. We're using an if statement. If classIsHard is true (which it is) then we should execute the code in the following { } curly braces. The code in the { } curly braces following that if statement is a call to the function studyMore(). As it stands, 'Study 📖' will print to console because classIsHard has a value of true. But what if we change classIsHard to false? If we did, then the studyMore() function will not be called and nothing will print to console. The compiler will continue on its merry way because the if statement would not have evaluated to true, thus it would not have entered those { } curly braces.
 Add a line note
 
-We can also specify an "else" clause.  For example, we can express "if class is hard then study more otherwise catch up on sleep" ike this:
+We can also specify an "else" clause.  For example, we can express "if class is hard then study more otherwise "catch up on sleep" like this:
 
 ````Swift
 func studyMore() {
@@ -105,6 +105,11 @@ openFileNamed("testfile")
 Can you see how they'e variations of the same thing?  Let's look at another example.
 
 ````Swift
+func takeUmbrella() {
+    // grab umbrella
+    print("I have my umbrella! ☂️")
+}
+
 var rainingOutside = false
 
 if rainingOutside == true {
@@ -113,20 +118,17 @@ if rainingOutside == true {
 	// don't worry about taking the umbrella
 	// NB no code is being excuted here, only comments!
 }
-goForAWalk()
 ````
 is the same as...
 
-````Swift
-func takeUmbrella() {
-    // grab umbrella
-    print("I have my umbrella! ☂️")
+```swift
+if rainingOutside {
+    takeUmbrella()
+} else {
+    // don't worry about taking the umbrella
+    // no code is being excuted here, only comments!
 }
-
-
-}
-goForAWalk()
-````
+```
 
 Our ````if```` doesn't have to be followed by a Boolean expression; it can also take a Boolean variable or constant, or a function which returns a Boolean.  Here's what that would look like in code:
 
