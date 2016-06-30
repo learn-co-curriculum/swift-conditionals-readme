@@ -12,7 +12,7 @@
 
 
 
-## Outline / Notes
+## Conditionals
 
 In the previous lesson we covered Boolean values (namely ````true```` and ````false````) along with the various operations we can perform that result in a Boolean value (namely ````<, ==, <=, >, >=, !=````).
 For example:
