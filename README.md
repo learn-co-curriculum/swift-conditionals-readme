@@ -1,9 +1,9 @@
 # Conditionals
 
-![Shakespeare](http://www.gomoxie.com/wp-content/uploads/Hamlet.jpg)
->To be, or not to be...
+![Shakespeare](http://i.imgur.com/otc8ERh.jpg?1)
+>To be, or not to be... -[William Shakespeare](https://en.wikipedia.org/wiki/William_Shakespeare)
 
-## Learning Objectives - The student should be able to..
+## Learning Objectives 
 
 * Explain that by making parts of their code *conditional*, they can execute different pieces of code based on certain conditions.
 * Explain that an *if* statement will execute a set of statements **only** if that condition is *true*. 
