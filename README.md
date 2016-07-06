@@ -186,7 +186,7 @@ if sallyDressColor == "yellow" {
 } else if sallyDressColor == "blue" {
 	wearSomethingPurple()
 } else if sallyDressColor == "red" {
-	wearSomethingOrangle() 
+	wearSomethingOrange() 
 } else if sallyDressColor == "green" {
 	wearSomethingBlue()
 } else ...
@@ -204,3 +204,5 @@ if sallyDressColor == "yellow" {
 
 
 <a href='https://learn.co/lessons/Conditionals' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-conditionals-readme'>Conditionals</a> on Learn.co and start learning to code for free.</p>
