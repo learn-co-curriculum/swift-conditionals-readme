@@ -194,7 +194,7 @@ if sallyDressColor == "yellow" {
 ````
 
 ##Review
-* You've learned that Boolean expressions return ````true```` or ````false```` based upon the result of the comparison performed (or inverting the value in the case of the spcial operator ````!````).
+* You've learned that Boolean expressions return ````true```` or ````false```` based upon the result of the comparison performed (or inverting the value in the case of the special operator ````!````).
 
 * Boolean expressions are particularly useful in helping your program take a particular course of action.  For example, ````if the battery is low then alert user to conserve power````.  This is expressed with an ````if```` conditional.
 
