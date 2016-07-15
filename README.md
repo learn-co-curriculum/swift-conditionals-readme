@@ -102,7 +102,7 @@ if doesFileExist == false {
 openFileNamed("testfile")
 ````
 
-Can you see how they'e variations of the same thing?  Let's look at another example.
+Can you see how they're variations of the same thing?  Let's look at another example.
 
 ````Swift
 func takeUmbrella() {
