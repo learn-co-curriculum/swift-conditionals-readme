@@ -3,12 +3,16 @@
 ![Shakespeare](http://i.imgur.com/otc8ERh.jpg?1)
 >To be, or not to be... -[William Shakespeare](https://en.wikipedia.org/wiki/William_Shakespeare)
 
+## Overview 
+
+In this lesson, we'll create conditional statements to tell our programs to do specific tasks based on various conditions. 
+
 ## Learning Objectives 
 
-* Explain that by making parts of their code *conditional*, they can execute different pieces of code based on certain conditions.
-* Explain that an *if* statement will execute a set of statements **only** if that condition is *true*. 
-* Explain that an *if* statement can provide an alternative set of statements, known as an *else clause*, for situations when the *if* condition is *false*.
-* Create/chain multiple *if-else* statements together to consider additional clauses:
+* Explain how conditionals allow for the execution of different pieces of code based on certain conditions
+* Explain that an *if* statement will execute a set of statements **only** if that condition is *true*.
+* Explain that an *if* statement can provide an alternative set of statements, known as an *else clause*, for situations when the *if* condition is *false*
+* Create and chain multiple *if-else* statements together to consider additional clauses
 
 
 
@@ -91,7 +95,7 @@ if doesFileExist == true {
 }
 ````
 
-Every Conditional effectively has both an ````if```` and an ````else```` part but depending upon how we style our code we can leave out the explicit ````else```` (which the compiler interprets as "if the condition is false then don't do anything").  For example, we could re-write the code above as follows:
+Every conditional effectively has both an ````if```` and an ````else```` part but depending upon how we style our code we can leave out the explicit ````else```` (which the compiler interprets as "if the condition is false then don't do anything").  For example, we could re-write the code above as follows:
 
 ````Swift
 let doesFileExist = findFileNamed("testfile")
@@ -119,7 +123,7 @@ if rainingOutside == true {
 	// NB no code is being excuted here, only comments!
 }
 ````
-is the same as...
+is the same as
 
 ```swift
 if rainingOutside {
@@ -202,7 +206,5 @@ if sallyDressColor == "yellow" {
 
 * You can chain multiple ````if / else```` chunks together to handle more complicated situations where there instead of testing a single value you need to take different actions based upon three or more values.
 
-
-<a href='https://learn.co/lessons/Conditionals' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/swift-conditionals-readme'>Conditionals</a> on Learn.co and start learning to code for free.</p>
