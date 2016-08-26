@@ -59,9 +59,8 @@ if classIsHard {
 ````
 
 Here we created a function named studyMore which takes no arguments and doesn't return anything. When this function is called, it will print 'Study 📖' to console. Following that, we're creating a variable named classIsHard of type Bool with a value of true. The next part should be self-evident in that it reads like a sentence. We're using an if statement. If classIsHard is true (which it is) then we should execute the code in the following { } curly braces. The code in the { } curly braces following that if statement is a call to the function studyMore(). As it stands, 'Study 📖' will print to console because classIsHard has a value of true. But what if we change classIsHard to false? If we did, then the studyMore() function will not be called and nothing will print to console. The compiler will continue on its merry way because the if statement would not have evaluated to true, thus it would not have entered those { } curly braces.
-Add a line note
 
-We can also specify an "else" clause.  For example, we can express "if class is hard then study more otherwise "catch up on sleep" like this:
+We can also specify an "else" clause.  For example, we can express "if class is hard then study more; otherwise catch up on sleep like this:
 
 ````Swift
 func studyMore() {
@@ -84,7 +83,7 @@ if classIsHard {
 ````
 Similar to above, but we added another function named catchUpOnSleep() which prints 'Zzzz 💤 😴' when called on. Then we are creating the classIsHard variable but setting it's initial value to false. Next we've created an if-else statement which should read like a sentence. If the class is hard, then we should study more.. if not, then we should catch up on some sleep. As you can see, what prints to console is 'Zzzz 💤 😴' which means studyMore() does not get called, we do not enter those { } curly braces, but we do enter the { } braces after the else statement because the first if statement evaluated to false. If it evaluated to true, then 'Study 📖' would have printed to the console and the catchUpOnSleep() function would never have gotten called.
 
-Are you begining to see the pattern?  Let's look at another one, maybe something more like an actual program, like "if the file exists then open it, otherwise tell the user it can't be found".  Let's see what it would look like in code:
+Are you beginning to see the pattern?  Let's look at another one, maybe something more like an actual program, like "if the file exists then open it, otherwise tell the user it can't be found".  Let's see what it would look like in code:
 
 ````Swift
 let doesFileExist = findFileNamed("testfile")
@@ -198,6 +197,7 @@ if sallyDressColor == "yellow" {
 ````
 
 ##Review
+
 * You've learned that Boolean expressions return ````true```` or ````false```` based upon the result of the comparison performed (or inverting the value in the case of the special operator ````!````).
 
 * Boolean expressions are particularly useful in helping your program take a particular course of action.  For example, ````if the battery is low then alert user to conserve power````.  This is expressed with an ````if```` conditional.
