@@ -172,11 +172,11 @@ if y == true {
 And here we'll show how to use a function:
 
 ````Swift
-func test(Bool a, Bool b) -> Bool {
+func test(a: Bool, b: Bool) -> Bool {
 ...
 }
 
-if test(x, b: y) {
+if test(a: x, b: y) {
 ...
 }
 ````
