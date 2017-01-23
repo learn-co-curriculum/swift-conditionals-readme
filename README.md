@@ -22,7 +22,7 @@ In the previous lesson we covered Boolean values (namely ````true```` and ````fa
 For example:
 
 ````Swift
-3 < 5    // false
+3 > 5    // false
 12 >= 12  // true
 let greedoFiredFirst = false  // kickin' it old-skool
 !greedoFiredFirst  // "true" (also known as revisionist history)
